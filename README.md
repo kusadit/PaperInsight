@@ -34,5 +34,5 @@ PaperInsight/
 ```
 
 ---
-##License
+## License
 This project is currently under development. License will be added once the project is complete.
