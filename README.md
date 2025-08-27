@@ -20,17 +20,17 @@ PaperInsight is an AI-powered tool designed to summarize research papers and ext
 ## Project Structure
 ```
 PaperInsight/
-├── app/ # Core Python code
-│ ├── pdf_utils.py # PDF extraction functions
-│ ├── text_cleaning.py # Text preprocessing functions
-│ ├── summarizer.py # Summarization + Keyword extraction
-│ └── streamlit_app.py # Main Streamlit app
-├── data/ # Sample PDFs for testing
-├── notebooks/ # Optional notebooks for experiments
-├── models/ # Optional: store pretrained models
-├── requirements.txt # Python dependencies
-├── README.md # Project description
-└── .gitignore # Ignored files/folders
+├── app/ 
+│ ├── pdf_utils.py 
+│ ├── text_cleaning.py 
+│ ├── summarizer.py 
+│ └── streamlit_app.py 
+├── data/ 
+├── notebooks/ 
+├── models/ 
+├── requirements.txt 
+├── README.md 
+└── .gitignore 
 ```
 
 License
