@@ -18,7 +18,7 @@ PaperInsight is an AI-powered tool designed to summarize research papers and ext
 ---
 
 ## Project Structure
-
+```
 PaperInsight/
 ├── app/ # Core Python code
 │ ├── pdf_utils.py # PDF extraction functions
@@ -31,7 +31,7 @@ PaperInsight/
 ├── requirements.txt # Python dependencies
 ├── README.md # Project description
 └── .gitignore # Ignored files/folders
-
+```
 
 License
 
