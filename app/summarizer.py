@@ -14,10 +14,10 @@ def chunk_text(text, max_chars=1000):
     start = 0
     while start < len(text):
         end = start + max_chars
-        # Ensure we don't cut mid-word
+        
         if end < len(text):
             end = text.rfind(" ", start, end)
-            if end == -1:  # fallback if no space found
+            if end == -1:  
                 end = start + max_chars
         chunks.append(text[start:end].strip())
         start = end
