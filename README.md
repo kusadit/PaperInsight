@@ -16,11 +16,53 @@ PaperInsight is a web application that extracts and summarizes text from PDF res
 - `.gitignore` – Git ignore rules for Python, virtual environments, and IDE-specific files.  
 - `requirements.txt` – List of dependencies for the project.  
 - `LICENSE` – License information for the project.  
-- `README.md` – Project overview and instructions.  
+- `README.md` – Project overview and instructions.
+
+```
+  PaperInsight
+│
+├── app
+│   ├── pdf_utils.py
+│   ├── streamlit_app.py
+│   ├── summarizer.py
+│   └── text_cleaning.py
+│
+├── data
+│
+├── models
+│   └── Read Me.txt
+│
+├── notebooks
+│   └── Read Me.txt
+│
+├── .gitignore
+├── LICENSE
+└── README.md
+ ```
 
 ## Installation
 1. Clone the repository:
    ```bash
    git clone <repo-url>
    cd PaperInsight
+   ```
+2. Create and activate a virtual environment:
+  ```bash
+  python -m venv venv
+  venv\Scripts\activate   # Windows
+  source venv/bin/activate  # macOS/Linux
+  ```
+
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### Usage
+Run the Streamlit app:
+```bash
+streamlit run app/app.py
+```
+Then open the provided URL in your browser, upload a PDF, and get the summarized text.
+
 
