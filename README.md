@@ -1,38 +1,65 @@
 # PaperInsight
 
-**Status:** Work in Progress
+PaperInsight is a web application that extracts and summarizes text from PDF research papers. It leverages **Python**, **Streamlit**, and **HuggingFace Transformers** to provide concise summaries from large documents.
 
-PaperInsight is an AI-powered tool designed to summarize research papers and extract important keywords. The goal is to help researchers, students, and professionals quickly understand the core ideas of any scientific document.
-
----
-
-## Planned Features
-
-- Upload PDF research papers.
-- Extract and clean text from PDFs.
-- Summarize content using HuggingFace Transformers models.
-- Extract keywords using KeyBERT.
-- View summaries and keywords in a clean Streamlit interface.
-- Download summaries as text files.
-
----
+## Features
+- Upload PDFs and extract text.
+- Breaks documents into manageable chunks for summarization.
+- Generates clear and concise summaries using advanced NLP models.
+- Handles large research papers efficiently.
 
 ## Project Structure
-```
-PaperInsight/
-├── app/ 
-│ ├── pdf_utils.py 
-│ ├── text_cleaning.py 
-│ ├── summarizer.py 
-│ └── streamlit_app.py 
-├── data/ 
-├── notebooks/ 
-├── models/ 
-├── requirements.txt 
-├── README.md 
-└── .gitignore 
-```
+- `app/` – Contains the main Streamlit application (`app.py`) and supporting scripts.  
+- `data/` – Folder to store sample PDFs or datasets.  
+- `models/` – Pretrained models or model checkpoints for summarization.  
+- `notebooks/` – Jupyter notebooks for experimentation or testing.  
+- `.gitignore` – Git ignore rules for Python, virtual environments, and IDE-specific files.  
+- `requirements.txt` – List of dependencies for the project.  
+- `LICENSE` – License information for the project.  
+- `README.md` – Project overview and instructions.
 
----
-## License
-This project is currently under development. License will be added once the project is complete.
+```
+  PaperInsight
+│
+├── app
+│   ├── pdf_utils.py
+│   ├── streamlit_app.py
+│   ├── summarizer.py
+│   └── text_cleaning.py
+│
+├── data
+│
+├── models
+├── notebooks
+├── .gitignore
+├── LICENSE
+└── README.md
+└──requirements.txt
+ ```
+
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone <repo-url>
+   cd PaperInsight
+   ```
+2. Create and activate a virtual environment:
+  ```bash
+  python -m venv venv
+  venv\Scripts\activate   # Windows
+  source venv/bin/activate  # macOS/Linux
+  ```
+
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### Usage
+Run the Streamlit app:
+```bash
+streamlit run app/app.py
+```
+Then open the provided URL in your browser, upload a PDF, and get the summarized text.
+
+
