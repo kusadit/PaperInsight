@@ -4,7 +4,7 @@ from transformers import pipeline, AutoTokenizer
 import torch
 from io import BytesIO
 
-# ---- Summarization Pipeline ----
+#Summarization Pipeline
 @st.cache_resource
 def load_summarizer():
     model_name = "sshleifer/distilbart-cnn-12-6"
@@ -14,7 +14,7 @@ def load_summarizer():
 
 summarizer, tokenizer = load_summarizer()
 
-# ---- PDF Text Extraction ----
+#PDF Text Extraction
 def extract_text_from_pdf(pdf_file):
     doc = fitz.open(stream=pdf_file.read(), filetype="pdf")
     text = ""
@@ -22,7 +22,7 @@ def extract_text_from_pdf(pdf_file):
         text += page.get_text()
     return text
 
-# ---- Chunking Function ----
+#Chunking Function
 def chunk_text(text, tokenizer, max_tokens=300):
     tokens = tokenizer.encode(text, truncation=False)
     chunks = []
@@ -32,7 +32,7 @@ def chunk_text(text, tokenizer, max_tokens=300):
         chunks.append(chunk_text)
     return chunks
 
-# ---- Summarize Text with Progress ----
+#Summarize Text with Progress
 def summarize_text(text):
     chunks = chunk_text(text, tokenizer, max_tokens=300)
     summary_text = ""
@@ -47,7 +47,7 @@ def summarize_text(text):
     progress_bar.empty()
     return summary_text
 
-# ---- Streamlit UI ----
+#Streamlit UI
 st.title("PaperInsight ")
 st.write("Upload your PDF and get a summarized version ")
 
