@@ -30,11 +30,7 @@ PaperInsight is a web application that extracts and summarizes text from PDF res
 ├── data
 │
 ├── models
-│   └── Read Me.txt
-│
 ├── notebooks
-│   └── Read Me.txt
-│
 ├── .gitignore
 ├── LICENSE
 └── README.md
