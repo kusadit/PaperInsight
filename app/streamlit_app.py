@@ -48,8 +48,8 @@ def summarize_text(text):
     return summary_text
 
 # ---- Streamlit UI ----
-st.title("PaperInsight (Optimized for Large PDFs)")
-st.write("Upload your PDF and get a summarized version with progress updates.")
+st.title("PaperInsight ")
+st.write("Upload your PDF and get a summarized version ")
 
 uploaded_file = st.file_uploader("Upload a PDF file", type=["pdf"])
 
