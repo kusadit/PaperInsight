@@ -38,6 +38,7 @@ PaperInsight is a web application that extracts and summarizes text from PDF res
 ├── .gitignore
 ├── LICENSE
 └── README.md
+└──requirements.txt
  ```
 
 ## Installation
